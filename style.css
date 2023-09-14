@@ -1,0 +1,438 @@
+/* -- IMAGES -- */
+.dandeleon{
+    border-radius: 20px;
+    width: 152px; 
+    height: 150px;
+}
+
+/* -- SCROLL -- */
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* -- ANIMATIONS --  */
+
+
+@keyframes slidin{
+
+    0%{transform: translateY(0px); opacity: 0;}
+    100%{transform: translateY(100px);}
+
+}
+
+@keyframes glowPulse{
+    0%{}
+    50%{box-shadow: 0 0 10px rgb(2, 204, 2);}
+    100%{}
+
+}
+
+@keyframes pulse{
+
+    0%{color:white;}
+    50%{color:rgb(48, 135, 235)}
+    100%{color:white;}
+
+}
+
+@keyframes prplPulse{
+
+    0%{}
+    50%{color:rgb(201, 0, 201);}
+    100%{}
+}
+
+
+@keyframes glowBlue{
+    0%{}
+    50%{ border: 2px solid rgb(48, 135, 235); box-shadow: 0 0 10px rgb(48, 135, 235);}
+    100%{}
+
+}
+
+@keyframes glowRed{
+    0%{}
+    50%{ border: 2px solid rgb(235, 48, 48); box-shadow: 0 0 10px rgb(235, 48, 48);}
+    100%{}
+
+}
+
+@keyframes glowYll{
+    0%{ }
+    50%{ border: 2px solid yellow;
+        box-shadow: 0 0 10px yellow;}
+    100%{}
+
+}
+
+@keyframes glowGre{
+    0%{}
+    50%{border: 2px solid green; box-shadow: 0 0 10px green;}
+    100%{}
+
+}
+
+@keyframes glowPrl{
+    0%{}
+    50%{ border: 2px solid purple; box-shadow: 0 0 10px purple;}
+    100%{ }
+
+}
+
+
+@keyframes cursorOutlineAni{
+    0%{}
+    50%{  box-shadow:0 0 30px white;}
+    100%{}
+}
+
+/* -- FONT -- */
+@font-face{
+    src: url(font/SF-Pro.ttf);
+    font-family:appl;
+}
+
+/* -- CURSOR -- */
+.cursor{
+    position: fixed;
+    height: 1px;
+    width: 1px;
+    border: 1px solid whitesmoke;
+    border-radius:50%;
+    left:0px;
+    top:0px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+.cursor-outline{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    border: 0.2px solid rgb(255, 255, 255);
+    border-radius:50%;
+    left:0px;
+    top:0px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation:cursorOutlineAni 3s ease-in-out infinite;
+    transition:all 0.10s;
+    
+}
+
+
+/* -- STYLES -- */
+
+.body{
+
+    background-color: rgb(0, 0, 0);
+    padding: 70px 70px 70px 70px;
+    margin-top:-250px;
+    cursor:none;
+}
+
+.space{
+    display:grid; 
+    place-items: center;
+    animation: slidin  3s  linear  1 both;
+    
+}
+
+
+.box{
+    border: 2px solid rgb(0, 0, 0); box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-top:400px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 50px;
+    padding-left:20px;
+    padding-right:20px;
+    width: 1200px;
+    transition: all 3s;
+    
+}
+.box:hover{
+    border: 2px solid rgb(48, 135, 235); box-shadow: 0 0 10px rgb(48, 135, 235);
+
+}
+
+
+.box--red{
+   
+    margin-top:400px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(43, 43, 43);
+    border-radius: 50px;
+    padding-left:20px;
+    padding-right:20px;
+    transition: all 3s;
+    width: 1200px;
+
+}
+.box--red:hover{
+    border: 2px solid rgb(235, 48, 48); box-shadow: 0 0 10px rgb(235, 48, 48);
+}
+
+.box--Yll{
+   
+    margin-top:400px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(43, 43, 43);
+    border-radius: 50px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:100px;
+    display:grid; 
+    place-items: center; 
+    width: 1200px;
+    transition: all 3s;
+
+}
+.box--Yll:hover{
+    border: 2px solid yellow; box-shadow: 0 0 10px yellow;
+}
+
+.prjArea{
+    border: 0.5px black;
+    border-radius: 50px;
+    padding-left:10px;
+    padding-right:0px;
+    padding-top:50px;
+    padding-bottom:50px;
+    margin:20px;
+    background-color: black;
+    color:grey;
+    width: auto;
+    font-family: appl;
+    display:inline-block;
+    vertical-align: middle;
+
+    border: 0.5px solid rgb(43, 43, 43);
+    box-shadow: 0 0 10px rgb(43, 43, 43);
+
+    transition: all 0.25s;
+}
+.prjArea:hover{
+    border: 0.5px solid yellow;
+    box-shadow: 0 0 10px yellow;
+    border-radius: 50px;
+}
+.prjColumns{
+    display:grid;
+    grid-template-columns: 540px 540px; 
+}
+.prjImg{
+    display: inline-block;
+    vertical-align: middle; 
+}
+.prjTextBox{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:20px;
+}
+.prjText{
+    display: inline-block;
+    width: 300px;
+    
+}
+.link{
+    cursor:none;
+    text-decoration: none;
+    color:yellow;
+    transition: all 0.25s;
+}
+
+.link:hover{
+    font-weight: bold;
+}
+
+.link:active{
+    color:yellow
+}
+
+.box--gre{
+   
+    margin-top:400px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(43, 43, 43);
+    border-radius: 50px;
+    padding-left:20px;
+    padding-right:20px;
+    display:grid; 
+    place-items: center; 
+    padding-bottom:200px; 
+    width: 1200px;
+    transition: all 3s;
+}
+.box--gre:hover{
+    border: 2px solid green; box-shadow: 0 0 10px green;
+}
+
+.box--prl{
+   
+    margin-top:400px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(43, 43, 43);
+    border-radius: 50px;
+    padding-left:20px;
+    padding-right:20px;
+    width: 1200px;
+    transition: all 3s;
+
+}
+.box--prl:hover{
+    border: 2px solid purple; box-shadow: 0 0 10px purple;
+}
+
+
+.title{
+
+    animation: slidin  3s  ease 0.25s  1 both;
+ 
+    color:black;
+    text-align: center;
+    font-weight: bolder;
+    font-size:70px;
+    font-family: appl;
+}
+
+.menu{
+    text-align: center;
+    margin-top:150px;
+    margin-bottom:150px;
+    color:white;
+}
+
+.menuC{
+
+    font-family:appl;
+    color:white;
+    font-size:18px;
+    padding-left:20px;
+    text-decoration: none;
+    cursor:none;
+    transition: all 1s;
+
+}
+.menuC:hover {
+    animation: pulse 0.80s ease infinite both;
+    
+}
+
+.text{
+    margin-top:200px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:100px;
+    font-family: appl;
+    color:white;
+    text-align: justify;
+    font-size:20px;
+
+}
+
+
+.mail{
+    text-decoration: none; 
+    color:white;
+    cursor:none;
+}
+.mail:hover{
+    animation: prplPulse 0.80s ease infinite both;
+}
+
+
+/* -- BUTTONS -- */
+
+.gt{
+    margin-top:150px;
+    margin-bottom:150px;
+    margin-right:50px;
+    background-color:black;
+    color:white;
+    font-family: appl;
+    border:none;
+    font-weight: bold;
+    font-size:20px;
+    border-radius:15px;
+    padding:20px;
+    text-decoration:none;
+    cursor:none;
+
+    transition: all 0.25s;
+}
+.gt:hover{
+    animation:glowPulse 1s ease infinite both;
+}
+
+
+.ig{
+    color:white;
+    background-image: linear-gradient(270deg, rgba(228,128,27,1) 0%, rgba(236,37,88,0.9948354341736695) 35%, rgba(141,0,255,1) 100%);
+    font-family: appl;
+    border:none;
+    font-weight: bold;
+    font-size:20px;
+    border-radius:15px;
+    padding:20px;
+    margin-right:50px;
+    text-decoration: none;
+    cursor:none;
+    transition: all 0.25s;
+}
+.ig:hover{
+    animation:glowPulse 1s ease infinite both;
+}
+
+.tw{
+    color:white;
+    background-color: rgb(48, 135, 235);
+    font-family: appl;
+    border:none;
+    font-weight: bold;
+    font-size:20px;
+    border-radius:15px;
+    padding:20px;
+    text-decoration: none;
+    cursor:none;
+    transition: all 0.25s;
+}
+
+.tw:hover{
+    animation:glowPulse 1s ease infinite both;
+}
+
+
+/* -- SCROLLBAR -- */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+::-webkit-scrollbar-thumb{
+    height:200px;
+    background: rgb(43, 43, 43);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+}
+
+/* -- ULTIMO ELEMENTO -- */
+
+.foot{
+    padding-top:200px;
+    padding-bottom:200px;
+    text-align:center;
+    color:white;
+    font-family:appl;
+    font-size: 15px;
+    text-decoration: none; 
+    color: white;
+    cursor:none;
+
+}

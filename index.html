@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+
+        <link href="style.css" rel="stylesheet">
+        <title> Luca Carbone | Main </title>
+
+    </head>
+
+    <body class="body">
+
+        
+        <!--  Main part   -->
+        
+        <div class="space"  >
+            
+            <div class="box">
+
+                <h1 class="title"> Hi I'm Luca Carbone</h1>
+    
+                <p class="menu">
+    
+                    <a class="menuC" href="#abtme">Me</a>
+                    <a class="menuC" href="#prj">Projects</a>
+                    <a class="menuC" href="#scls">Socials</a>
+                    <a class="menuC" href="#cntct">Contact</a>
+    
+                </p>
+    
+            </div>
+    
+    
+            <!-- Me-->
+            
+            <div class="box--red">
+    
+                <a name="abtme"></a>
+                <h1 class="title" > About Me </h1>
+                
+                <p class="text" >
+                    
+                   Hi I'm Luca Carbone i'm currently studying IT at Itis Luigi Cerebotani, I'm an Italian student I'm doing those simple projects just for fun and also for learning (that's my priority),
+                   at school I've learned Java, Pyhton, C, lateX and on my own i'm learning c#, Html and CSS. If you want me to work for you just write me to my personal email that you can find 
+                   in this website I'm always reliable my principal languages are Java, Python and Html and CSS, but I can always learn and try new things. I'm also iterested in joyinig some workgroups 
+                   to contribute even if i don't get paid. I've also recently earned a B2 Cambridge English certification.
+    
+    
+                </p>
+    
+    
+            </div>
+    
+            <!-- Projects -->
+            
+            <div class="box--Yll">
+                <a name="prj"></a> <!-- ancora -->
+                <h1 class="title">  Projects </h1>
+                
+                <p class="text">
+                   
+                    Here are the projects that I've worked on they are pretty simple but they prove my abilities, you can check the source code on my github repositories and download every program.
+    
+    
+                </p>
+    
+                <div class="prjColumns">
+    
+                    <div class="prjArea">
+                        <div class="prjImg">
+                            <img src="imgs/prova_cd.jpeg" class="dandeleon">
+                        </div>
+                        
+                        <div class="prjTextBox">
+                            <p class="prjText"> Cboy : a project that i'm making for my father, it's a quite complex website about commodore and commodore's games that my father made, for each game there's a description and every program can be downoladed. 
+                            (in development).</p>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="prjArea">
+                        <div class="prjImg">
+                            <img src="imgs/1497619946-jd28_85150.png" class="dandeleon">
+                        </div>
+                        
+                        <div class="prjTextBox">
+                            <p class="prjText"> InstaFol : A simple program coded in python that helps you in checking who does not follow you back on intangram is a very helpful tool for the influencers, you can check more details on the progam's site. (stills in develop, website offline updates coming soon ) <a href="https://carbooooo.github.io/instaFol/" class="link">visit here the website</a>.</p>
+                        </div>
+                        
+                    </div>
+        
+            
+                    <div class="prjArea">
+                        <div class="prjImg">
+                            <img src="imgs/dandeleon.jpg" class="dandeleon">
+                        </div>
+                        
+                        <div class="prjTextBox">
+                            <p class="prjText">CellularDandeleon : this is a very interesting, it's my first cellular automaton it simulates a dandeleon field, this is also coded in python you can find the source code and more details on my personal GitHub page. <a href="https://github.com/carbooooo/Cellular-Automaton" class="link">visit the program here</a>.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="prjArea">
+                        <div class="prjImg">
+                            <img src="imgs/white.jpeg" class="dandeleon">
+                        </div>
+                        
+                        <div class="prjTextBox">
+                            <p class="prjText"> Empty space just for graphics</p>
+                        </div>
+                        
+                    </div>
+    
+                </div>
+    
+               
+    
+            </div>
+    
+            <!-- Socials -->
+            
+            <div class="box--gre">
+                <a name="scls"></a> <!-- ancora -->
+                <h1 class="title" style="margin-bottom:200px;"> Socials </h1>
+                
+                <br>
+                <div>
+                    <a class="gt" href="https://github.com/carbooooo">GitHub</a>
+                    <a class="ig" href="">Instagram</a>
+                    <a class="tw" href="">Twitter</a>
+                </div>
+                
+    
+            </div>
+    
+            <!-- Contact -->
+            
+            <div class="box--prl">
+                
+                <h1 class="title"> Contact </h1>
+    
+                <p class="text" style="text-align: center;">
+                    <a name="cntct"></a> <!-- ancora -->
+                    <a href="mailto:carbodevelops@gmail.com" class="mail" >carbodevelops@gmail.com</a>
+    
+                </p>
+    
+    
+            </div>
+    
+    
+            <p class="foot"> Made by <a href="https://github.com/carbooooo" class="foot">CarboDev</a> | 2023</p>
+            
+        </div>
+
+        <div class="cursor"></div>
+        <div class="cursor-outline"></div>
+
+        <script>
+            const cursor = document.querySelector('.cursor');
+            const cursorOutline = document.querySelector('.cursor-outline');
+    
+            document.addEventListener('mousemove', (e) => {
+    
+                cursor.setAttribute("style","top: "+(e.pageY - scrollY)+"px; left: "+(e.pageX)+"px;")
+                cursorOutline.setAttribute("style","top: "+(e.pageY - scrollY)+"px; left: "+(e.pageX)+"px;")
+
+                
+               
+            });
+        </script>
+
+
+    </body>
+
+    
+
+</html> 
